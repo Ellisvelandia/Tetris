@@ -92,11 +92,11 @@ function seizeBlock() {
   checkMatch();
 }
 function checkMatch() {
+
   const childNodes = playground.childNodes;
-  childNodes.forEach((child) => {
+  childNodes.forEach(child => {
     let matched = true;
-    child.children[0],
-      childNodes.forEach((li) => {
+    child.children[0].childNodes.forEach((li) => {
         if (!li.classList.contains("seized")) {
           matched = false;
         }
